@@ -1,0 +1,40 @@
+body{
+  margin: 0;
+  font-family: 'Montserrat'; font-weight: bolder;
+}
+.top{
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  background-color: #000;
+
+}
+h1{
+  margin: 0;
+}
+p{
+  margin-top: 0.5rem;
+}
+footer{
+  margin: 2rem;
+  text-align: center;
+}
+#logo_names{
+  margin: 0;
+}
+#insta_logo{
+  width: 2.4rem;
+  margin: 0.85rem;
+}
+#git_logo{
+  width: 2.2rem;
+  margin: 1rem;
+}
+#yt_logo{
+
+  width: 4rem;
+}
+#wap_logo{
+  width: 2rem;
+  margin: 1rem;
+}
