@@ -1,28 +1,57 @@
+
 body{
   margin: 0;
   font-family: 'Montserrat'; font-weight: bolder;
+
 }
 .top{
+
   color: #fff;
   text-align: center;
-  padding: 1rem;
+
   background-color: #000;
+  height: 100%;
 
 }
 .left_bar{
+  position: sticky;
+  top: 0;
   width: 20%;
-  height: 500px;
-  background-color: red;
+  height: 100vh;
+  background-color: white;
+  float: left;
+
+
+
 }
+.gg{
+  background-color: purple
+}
+.main{
+  width: 100%;
+  height: 500px;
+  background-color: green;
+
+}
+.main1{
+  width: 100%;
+  height: 1000px;
+  background-color: green;
+
+
+}
+
 h1{
   margin: 0;
 }
 p{
   margin-top: 0.5rem;
 }
-footer{
-  margin: 2rem;
-  text-align: center;
+.bottom{
+  width: 80%;
+  height: 500px;
+  background-color: green;
+  background-color: orange;
 }
 #logo_names{
   margin: 0;
