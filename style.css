@@ -9,6 +9,11 @@ body{
   background-color: #000;
 
 }
+.left_bar{
+  width: 20%;
+  height: 500px;
+  background-color: red;
+}
 h1{
   margin: 0;
 }
