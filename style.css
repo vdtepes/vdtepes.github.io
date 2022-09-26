@@ -2,7 +2,23 @@
 body{
   margin: 0;
   font-family: 'Montserrat'; font-weight: bolder;
+}
 
+.title0{
+  margin: 0;
+  padding-top: 1rem;
+}
+.title1{
+  margin: 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+#contactlogo{
+  width: 5rem;
+  position: fixed;
+  bottom: 40px;
+  right:40px;
 }
 .top{
 
@@ -13,61 +29,16 @@ body{
   height: 100%;
 
 }
-.left_bar{
-  position: sticky;
-  top: 0;
-  width: 20%;
-  height: 100vh;
-  background-color: white;
-  float: left;
+.buttons{
 
 
-
+  background-color: #fff;
+  float: right;
+  padding: 1em;
+  font-family: 'Montserrat'; font-weight: bolder;
+  border: none;
 }
-.gg{
-  background-color: purple
-}
-.main{
-  width: 100%;
-  height: 500px;
-  background-color: green;
-}
-.main1{
-  width: 100%;
-  height: 1000px;
-  background-color: green;
-
-
-}
-
-h1{
-  margin: 0;
-}
-p{
-  margin-top: 0.5rem;
-}
-.bottom{
-  width: 80%;
-  height: 500px;
-  background-color: green;
-  background-color: orange;
-}
-#logo_names{
-  margin: 0;
-}
-#insta_logo{
-  width: 2.4rem;
-  margin: 0.85rem;
-}
-#git_logo{
-  width: 2.2rem;
-  margin: 1rem;
-}
-#yt_logo{
-
-  width: 4rem;
-}
-#wap_logo{
-  width: 2rem;
-  margin: 1rem;
+.buttons:hover{
+  background: black;
+  color: white;
 }
