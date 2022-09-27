@@ -1,42 +1,109 @@
-
+*{
+  box-sizing: border-box;
+}
 body{
   margin: 0;
+  padding: 0;
   font-family: 'Montserrat'; font-weight: bolder;
 }
 
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+}
+
+.brandtitle{
+  margin: 0.7rem;
+  font-size: 1.5rem;
+}
+
+.nav-links ul{
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li{
+  list-style: none;
+
+}
+.nav-links li a{
+  text-decoration: none;
+  padding: 1rem;
+  color: #fff;
+  display: block;
+}
+.nav-links li a:hover{
+  background-color: #fff;
+  color: #000;
+}
+
+.toggle-button{
+
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar{
+  background-color: #fff;
+  border-radius: 5px;
+  height: 3px;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .toggle-button{
+    display: flex;
+  }
+  .nav-links{
+   display: none;
+    width: 100%
+  }
+  .navbar{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-links ul {
+    width: 100%;
+    flex-direction: column;
+
+  }
+  .nav-links li {
+    text-align: center;
+
+  }
+  .nav-links.active{
+    display: flex;
+  }
+
+}
+
+
 .title0{
   margin: 0;
+  padding-left: 1rem;
   padding-top: 1rem;
 }
 .title1{
   margin: 0;
+ padding-left: 1rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
-#contactlogo{
-  width: 5rem;
-  position: fixed;
-  bottom: 40px;
-  right:40px;
-}
 .top{
 
   color: #fff;
-  text-align: center;
-
   background-color: #000;
   height: 100%;
 
-}
-.buttons{
-  background-color: #fff;
-  float: right;
-  padding: 1.1em;
-  font-family: 'Montserrat'; font-weight: bolder;
-  border: none;
-}
-.buttons:hover{
-  background: black;
-  color: white;
 }
