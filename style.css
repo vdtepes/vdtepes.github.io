@@ -1,8 +1,7 @@
-*{
-  box-sizing: border-box;
-}
+
 body{
   margin: 0;
+
   padding: 0;
   font-family: 'Montserrat'; font-weight: bolder;
 }
@@ -14,33 +13,32 @@ body{
   background-color: #000;
   color: #fff;
 }
-
 .brandtitle{
   margin: 0.7rem;
   font-size: 1.5rem;
 }
-
 .nav-links ul{
   display: flex;
   padding: 0;
   margin: 0;
 }
-
 .nav-links li{
   list-style: none;
+
 
 }
 .nav-links li a{
   text-decoration: none;
   padding: 1rem;
+  border-style: solid;
+  border-width: 0 0 6px 0;
+  border-color: black;
   color: #fff;
   display: block;
 }
 .nav-links li a:hover{
-  background-color: #fff;
-  color: #000;
+  border-color: #F2F2F2;
 }
-
 .toggle-button{
 
   display: none;
@@ -52,15 +50,18 @@ body{
   width: 30px;
   height: 21px;
 }
-
 .toggle-button .bar{
   background-color: #fff;
   border-radius: 5px;
   height: 3px;
   width: 100%;
 }
+.main{
+  margin: 2rem;
+  width: 700px;;
 
-@media (max-width: 600px) {
+}
+@media (max-width: 800px) {
   .toggle-button{
     display: flex;
   }
@@ -81,29 +82,23 @@ body{
     text-align: center;
 
   }
+  .nav-links li a{
+    border: none;
+  }
+  .nav-links li a:hover{
+    background-color: #fff;
+    color: #000;
+  }
   .nav-links.active{
     display: flex;
+  }
+  .main{
+    width: inherit;
   }
 
 }
 
-
-.title0{
-  margin: 0;
-  padding-left: 1rem;
-  padding-top: 1rem;
-}
-.title1{
-  margin: 0;
- padding-left: 1rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.top{
-
-  color: #fff;
-  background-color: #000;
-  height: 100%;
-
+.brandtitle{
+  font-size: 2rem;
+  margin-left: 2rem;
 }
