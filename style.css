@@ -8,15 +8,13 @@ body{
 
 .navbar{
   display: flex;
+  padding: 0;
   justify-content: space-between;
   align-items: center;
   background-color: rgb(255, 255, 255);
   color: #000;
 }
-.brandtitle{
-  margin: 0.7rem;
-  font-size: 1.5rem;
-}
+
 .maintitle{
   margin: 0;
   font-size: 2rem;
@@ -83,7 +81,55 @@ body{
   padding-bottom: 3rem;
 
 }
+.wrapper1{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.brandtitle{
+  width: 5rem;
+}
+.contactme{
+  display: block;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(0, 255, 140);
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all .35s;
+}
 
+.contactme span{
+  position: relative;
+  z-index: 2;
+}
+
+.contactme:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #44f384;
+  transition: all .35s;
+}
+
+.contactme:hover{
+  color: #000000;
+  border: none;
+}
+
+.contactme:hover:after{
+  width: 100%;
+}
 @media (max-width: 800px) {
   .toggle-button{
     display: flex;
