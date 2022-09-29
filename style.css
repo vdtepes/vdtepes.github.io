@@ -81,6 +81,10 @@ body{
   padding-bottom: 3rem;
 
 }
+.services{
+  margin: 2rem;
+  color: white;
+}
 .wrapper1{
   position: relative;
   height: 100px;
@@ -109,7 +113,10 @@ body{
   position: relative;
   transition: all .35s;
 }
+hr{
 
+  color: white;
+}
 .contactme span{
   position: relative;
   z-index: 2;
@@ -134,6 +141,39 @@ body{
 .contactme:hover:after{
   width: 100%;
 }
+
+
+.flex-container{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 2rem;
+
+}
+
+.flex-item{
+  background-color: white;
+  border: 3px solid white;
+  width: 300px;
+  margin: 1rem;
+
+}
+.flex-item1{
+  min-height: 300px;
+  flex-grow: 1;
+
+}
+.flex-item2{
+  min-height: 300px;
+  flex-grow: 1;
+}
+.flex-item3{
+  min-height: 300px;
+  flex-grow: 1;
+}
+
+
+
 @media (max-width: 800px) {
   .toggle-button{
     display: flex;
