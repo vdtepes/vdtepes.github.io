@@ -6,3 +6,4 @@ toggleButton.addEventListener('click', () =>
   navbarLinks.classList.toggle('active')
 }
 )
+console.log(window.getComputedStyle(document.documentElement).getPropertyValue('--text-color'))

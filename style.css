@@ -1,4 +1,6 @@
-
+:root{
+  --text-color: black;
+}
 body{
   margin: 0;
   background-color: #000;
@@ -81,8 +83,22 @@ body{
   padding-bottom: 3rem;
 
 }
+.cont-inner{
+  display: flex;
+  justify-content:center ;
+  flex-wrap: wrap;
+}
+.cont-msg{
+  display:grid;
+  justify-content:center ;
+  flex-direction: column;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 1rem;;
+}
 .services{
   margin: 2rem;
+  text-align: center;
   color: white;
 }
 .wrapper1{
@@ -102,6 +118,7 @@ body{
   justify-content: space-around;
   align-items: center;
   height: 45px;
+  
   line-height: 40px;
   font-size: 18px;
   font-family: sans-serif;
@@ -129,13 +146,14 @@ hr{
   left: 0;
   width: 0;
   height: 100%;
-  background: #44f384;
+  background: #44f384 ;
   transition: all .35s;
 }
 
 .contactme:hover{
   color: #000000;
   border: none;
+  box-shadow: 0 0 8px 0px #44f384
 }
 
 .contactme:hover:after{
@@ -171,10 +189,40 @@ hr{
   min-height: 300px;
   flex-grow: 1;
 }
+.c-form{
+  color: #fff;
+  margin-left: 2rem;
+  margin-bottom: 0.5rem;
+  outline: none;
+}
 
+.contact input, .contact textarea{
+  color: #000;
+}
 
+#sub-but{
 
-@media (max-width: 800px) {
+  background-color: #000;
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(0, 255, 140);
+  letter-spacing: 2px;
+  text-align: center;
+  width: 150px;
+  height: 40px;
+}
+
+#sub-but:hover{
+  color: #2ef885;
+  border: none;
+  box-shadow: 0 0 8px 0px #44f384
+}
+.cont-sub{
+display: flex;
+  justify-content: center;
+  
+}
+
+@media all and (max-width: 800px) {
   .toggle-button{
     display: flex;
   }
@@ -186,11 +234,18 @@ hr{
     flex-direction: column;
     align-items: flex-start;
     padding: 0.5rem;
+    background-color: hsl(0, 0%, 100%);
+    
   }
   .nav-links ul {
     width: 100%;
     flex-direction: column;
 
+  }
+  .brandtitle{
+    padding-bottom: 10px;
+    margin-left: 0;
+    
   }
   .wrapper{
     width: inherit;
@@ -207,7 +262,7 @@ hr{
   .nav-links li a{
     border: none;
   }
-  .nav-links li a:hover{
+  .nav-links li a:focus{
     background-color: rgb(0, 0, 0);
     color: #a5edcb;
   }
