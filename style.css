@@ -237,6 +237,9 @@ display: flex;
     background-color: hsl(0, 0%, 100%);
     
   }
+  .c-form-m{
+    width: 390px;
+  }
   .nav-links ul {
     width: 100%;
     flex-direction: column;
