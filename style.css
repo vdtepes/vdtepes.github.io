@@ -191,7 +191,7 @@ hr{
 }
 .c-form{
   color: #fff;
-  margin-left: 2rem;
+  
   margin-bottom: 0.5rem;
   outline: none;
 }
@@ -238,7 +238,7 @@ display: flex;
   }
   .c-form-m{
     width: 300px;
-    margin-right: 2rem;
+    
   }
   .nav-links ul {
     width: 100%;
